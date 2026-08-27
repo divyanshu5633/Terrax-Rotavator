@@ -15,6 +15,7 @@ export const seriesLinks: NavItem[] = [
   { label: 'Gyrovator Series', href: '/products/gyrovator-series' },
 ];
 
+// Primary nav — shown in header on all pages
 export const navLinks: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
@@ -24,6 +25,20 @@ export const navLinks: NavItem[] = [
     children: seriesLinks,
   },
   { label: 'Why Terrax', href: '/why-terrax' },
+  { label: 'Applications', href: '/applications' },
+  { label: 'Contact', href: '/contact' },
+];
+
+// Company links — used in footer Company column
+// Manufacturing accessible via footer + About page, not primary nav
+export const companyLinks: NavItem[] = [
+  { label: 'About Terrax', href: '/about' },
+  { label: 'Why Terrax', href: '/why-terrax' },
+  { label: 'Manufacturing', href: '/manufacturing' },
+];
+
+// Explore links — used in footer Explore column
+export const exploreLinks: NavItem[] = [
   { label: 'Applications', href: '/applications' },
   { label: 'Contact', href: '/contact' },
 ];

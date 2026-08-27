@@ -9,19 +9,24 @@ interface SEOProps {
 
 const SITE_NAME = 'TERRAX';
 const BASE_URL = 'https://terrax.in';
-const DEFAULT_OG_IMAGE = `${BASE_URL}/og-default.jpg`;
+const DEFAULT_OG_IMAGE = `${BASE_URL}/assets/brand/terrax-og-image.jpg`;
 
 export function useSEO({ title, description, canonical, ogImage }: SEOProps) {
-  const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
-  const resolvedCanonical = canonical ? `${BASE_URL}${canonical}` : undefined;
+  const resolvedCanonical = canonical
+    ? canonical === '/'
+      ? `${BASE_URL}/`
+      : `${BASE_URL}${canonical.startsWith('/') ? canonical : `/${canonical}`}`
+    : undefined;
   const resolvedOgImage = ogImage || DEFAULT_OG_IMAGE;
 
   useEffect(() => {
     // Title
-    document.title = fullTitle;
+    document.title = title;
 
     // Meta description
-    setMeta('description', description ?? '');
+    if (description) {
+      setMeta('description', description);
+    }
 
     // Canonical
     if (resolvedCanonical) {
@@ -35,13 +40,19 @@ export function useSEO({ title, description, canonical, ogImage }: SEOProps) {
     }
 
     // Open Graph
-    setOgMeta('og:title', fullTitle);
-    setOgMeta('og:description', description ?? '');
-    setOgMeta('og:url', resolvedCanonical ?? '');
+    setOgMeta('og:title', title);
+    if (description) setOgMeta('og:description', description);
+    if (resolvedCanonical) setOgMeta('og:url', resolvedCanonical);
     setOgMeta('og:image', resolvedOgImage);
     setOgMeta('og:type', 'website');
     setOgMeta('og:site_name', SITE_NAME);
-  }, [fullTitle, description, resolvedCanonical, resolvedOgImage]);
+
+    // Twitter Card
+    setMeta('twitter:card', 'summary_large_image');
+    setMeta('twitter:title', title);
+    if (description) setMeta('twitter:description', description);
+    setMeta('twitter:image', resolvedOgImage);
+  }, [title, description, resolvedCanonical, resolvedOgImage]);
 }
 
 function setMeta(name: string, content: string) {

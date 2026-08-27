@@ -1,0 +1,6 @@
+# TERRAX Agricultural Implements — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://terrax.in/sitemap.xml

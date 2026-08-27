@@ -25,7 +25,7 @@ const sizeSummary = [
 
 export function ProductsPage() {
   useSEO({
-    title: 'Terrax Product Catalogue | Rotavator Series',
+    title: 'Terrax Products | Rotavators & Agricultural Implements',
     description: 'Browse the complete TERRAX rotavator range: Mini, Orchard, Regular, Regular Plus, Sami Champion, and Gyrovator series. Premium agricultural tillage implements made in India.',
     canonical: '/products',
   });

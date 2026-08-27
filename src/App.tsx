@@ -7,53 +7,10 @@ import { ProductsPage } from './pages/Products';
 import { ProductSeriesPage } from './pages/ProductSeries';
 import { WhyTerraxPage } from './pages/WhyTerrax';
 import { ApplicationsPage } from './pages/Applications';
+import { ManufacturingPage } from './pages/Manufacturing';
 import { ContactPage } from './pages/Contact';
 
-// ─── 404 Not Found ────────────────────────────────────────────────────────────
-function NotFoundPage() {
-  return (
-    <div
-      style={{
-        minHeight: '80vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        textAlign: 'center',
-        padding: '2rem',
-        paddingTop: '8rem',
-        backgroundColor: 'var(--color-terrax-offwhite)',
-      }}
-    >
-      <span
-        style={{
-          fontFamily: 'var(--font-display)',
-          fontWeight: 800,
-          fontSize: 'clamp(4rem, 12vw, 8rem)',
-          color: 'var(--color-terrax-green)',
-          opacity: 0.15,
-          lineHeight: 1,
-          display: 'block',
-        }}
-        aria-hidden="true"
-      >
-        404
-      </span>
-      <h1
-        className="tx-heading-lg"
-        style={{ color: 'var(--color-terrax-charcoal)', marginTop: '1rem', marginBottom: '1rem' }}
-      >
-        Page Not Found
-      </h1>
-      <p className="tx-body" style={{ maxWidth: '40ch', marginBottom: '2rem' }}>
-        The page you're looking for doesn't exist. Return to the homepage to explore TERRAX products.
-      </p>
-      <a href="/" className="btn-primary" style={{ textDecoration: 'none' }}>
-        Go to Homepage
-      </a>
-    </div>
-  );
-}
+import { NotFoundPage } from './pages/NotFound';
 
 // ─── App ──────────────────────────────────────────────────────────────────────
 function App() {
@@ -107,6 +64,14 @@ function App() {
           element={
             <RootLayout>
               <ApplicationsPage />
+            </RootLayout>
+          }
+        />
+        <Route
+          path="/manufacturing"
+          element={
+            <RootLayout>
+              <ManufacturingPage />
             </RootLayout>
           }
         />

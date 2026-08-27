@@ -91,7 +91,7 @@ export function ProductSeriesPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                <Button as="link" to="/contact" variant="primary" rightIcon={<ArrowRight size={18} />} className="justify-center">
+                <Button as="link" to={`/contact?series=${series.slug}`} variant="primary" rightIcon={<ArrowRight size={18} />} className="justify-center">
                   ENQUIRE ABOUT THIS SERIES
                 </Button>
                 <Button as="link" to="/products" variant="ghost" className="justify-center">

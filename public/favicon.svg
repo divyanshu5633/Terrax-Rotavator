@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="4" fill="#0D2818"/>
-  <rect x="4" y="6" width="24" height="4" rx="1.5" fill="#E8621A"/>
-  <rect x="13" y="10" width="6" height="16" rx="1.5" fill="white"/>
-  <rect x="4" y="14" width="9" height="2.5" rx="1.25" fill="rgba(255,255,255,0.4)"/>
-  <rect x="19" y="14" width="9" height="2.5" rx="1.25" fill="rgba(255,255,255,0.4)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Brand Dark Forest Green Background -->
+  <rect width="64" height="64" rx="14" fill="#0D2818"/>
+  <!-- Top Orange Accent Indicator -->
+  <rect x="12" y="8" width="40" height="4" rx="2" fill="#E8621A"/>
+  <!-- Bold Industrial T Emblem -->
+  <path d="M16 18H48V26H36V52H28V26H16V18Z" fill="#FFFFFF"/>
+  <!-- Agricultural Blade Accent -->
+  <path d="M38 34L48 44V34H38Z" fill="#E8621A"/>
+  <path d="M26 44L16 34V44H26Z" fill="#6BA04E"/>
 </svg>
