@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { Container } from '../common/Container';
 import { SectionHeading } from '../common/SectionHeading';
 import { allSeries } from '../../data/series';
-import { ImagePlaceholder } from '../common/ImagePlaceholder';
+import { ProductImage } from '../common/ProductImage';
 import { Badge } from '../common/Badge';
 
 export function ProductSeriesSection() {
@@ -40,10 +40,12 @@ export function ProductSeriesSection() {
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
                 <div className="lg:col-span-6 min-w-0">
-                  <ImagePlaceholder
-                    seriesName={featured.shortName}
+                  <ProductImage
+                    src={featured.imagePath}
+                    alt={`${featured.name} rotavator`}
                     aspectRatio="16/9"
-                    label={`${featured.name} rotavator`}
+                    objectFit="contain"
+                    fallbackTitle={featured.shortName}
                   />
                 </div>
                 <div className="lg:col-span-6 p-6 sm:p-8 min-w-0">
@@ -108,10 +110,12 @@ export function ProductSeriesSection() {
                 style={{ textDecoration: 'none' }}
               >
                 <div style={{ position: 'relative', overflow: 'hidden' }}>
-                  <ImagePlaceholder
-                    seriesName={series.shortName}
+                  <ProductImage
+                    src={series.imagePath}
+                    alt={`${series.name} rotavator`}
                     aspectRatio="16/10"
-                    label={`${series.name} rotavator`}
+                    objectFit="contain"
+                    fallbackTitle={series.shortName}
                   />
                 </div>
                 <div style={{ padding: '1.25rem 1.25rem 1.5rem' }}>

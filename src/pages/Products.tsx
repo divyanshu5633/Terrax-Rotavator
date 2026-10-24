@@ -5,7 +5,7 @@ import { Container } from '../components/common/Container';
 import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { allSeries } from '../data/series';
 import { ProductCard } from '../components/product/ProductCard';
-import { ImagePlaceholder } from '../components/common/ImagePlaceholder';
+import { ProductImage } from '../components/common/ProductImage';
 import { Badge } from '../components/common/Badge';
 import { CTASection } from '../components/sections/CTASection';
 
@@ -112,10 +112,12 @@ export function ProductsPage() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
                   <div className="lg:col-span-6 min-w-0">
-                    <ImagePlaceholder
-                      seriesName={featured.shortName}
+                    <ProductImage
+                      src={featured.imagePath}
+                      alt={`${featured.name} rotavator`}
                       aspectRatio="16/10"
-                      label={`${featured.name} rotavator`}
+                      objectFit="contain"
+                      fallbackTitle={featured.shortName}
                     />
                   </div>
                   <div className="lg:col-span-6 p-6 sm:p-8 min-w-0">

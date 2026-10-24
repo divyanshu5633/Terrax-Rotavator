@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ImagePlaceholder } from './ImagePlaceholder';
 
 interface ProductImageProps {
@@ -22,6 +22,11 @@ export function ProductImage({
 }: ProductImageProps) {
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setHasError(false);
+    setIsLoaded(false);
+  }, [src]);
 
   if (hasError || !src) {
     return (

@@ -24,7 +24,7 @@ export function SoilPreparationSection() {
               }}
             >
               <ProductImage
-                src="/assets/products/terrax-rotavator-stand.png"
+                src="/assets/products/terrax-rotavator-classic-orange.png"
                 alt="TERRAX Rotavator Soil Preparation Action"
                 aspectRatio="16/10"
                 objectFit="contain"

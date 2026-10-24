@@ -32,8 +32,8 @@ export const allSeries: Series[] = [
     heroDescription:
       'Purpose-built for small-acreage farming and orchard work with compact tractors. The Mini Series delivers reliable soil preparation in tight spaces.',
     sizeConfigIds: ['s3-16', 's35-20', 's35-24'],
-    imagePath: '/assets/products/mini-series/hero.webp',
-    galleryPaths: [],
+    imagePath: '/assets/products/mini-series/hero.png',
+    galleryPaths: ['/assets/products/mini-series/hero.png'],
     highlights: [
       'Compatible with compact and sub-compact tractors',
       'Narrow working widths for precise tillage',
@@ -54,8 +54,14 @@ export const allSeries: Series[] = [
     heroDescription:
       'Engineered for controlled, precise tillage in orchard and plantation environments. Low-profile build and optimized blade placement for between-row operation.',
     sizeConfigIds: ['s3-16', 's35-20', 's35-24', 's4-30'],
-    imagePath: '/assets/products/orchard-series/hero.webp',
-    galleryPaths: [],
+    imagePath: '/assets/products/orchard-series/hero.png',
+    galleryPaths: [
+      '/assets/products/orchard-series/hero.png',
+      '/assets/products/terrax-rotavator-gear-drive-side.png',
+      '/assets/products/terrax-rotavator-dualtone.png',
+      '/assets/products/terrax-rotavator-classic-orange.png',
+      '/assets/products/terrax-rotavator-heavy-duty.png',
+    ],
     highlights: [
       'Low-clearance design for orchard environments',
       'Precise inter-row tillage without root damage',
@@ -76,8 +82,14 @@ export const allSeries: Series[] = [
     heroDescription:
       'The Regular Series sets the standard for dependable tillage performance. Versatile sizes and a proven build make it suitable for the majority of Indian farming conditions.',
     sizeConfigIds: ['s4-30', 's5-36', 's55-39', 's55-42', 's6-42'],
-    imagePath: '/assets/products/regular-series/hero.webp',
-    galleryPaths: [],
+    imagePath: '/assets/products/regular-series/hero.png',
+    galleryPaths: [
+      '/assets/products/regular-series/hero.png',
+      '/assets/products/terrax-rotavator-gear-drive-side.png',
+      '/assets/products/terrax-rotavator-dualtone.png',
+      '/assets/products/terrax-rotavator-heavy-duty.png',
+      '/assets/products/terrax-rotavator-chrome.png',
+    ],
     highlights: [
       'Wide size range for varied field requirements',
       'Proven durability for season-round operation',
@@ -98,8 +110,14 @@ export const allSeries: Series[] = [
     heroDescription:
       'When standard isn\'t enough — the Regular Plus Series offers enhanced build strength and extended size coverage for more demanding tillage requirements.',
     sizeConfigIds: ['s5-36', 's55-39', 's55-42', 's6-42', 's6-48'],
-    imagePath: '/assets/products/regular-plus-series/hero.webp',
-    galleryPaths: [],
+    imagePath: '/assets/products/regular-plus-series/hero.png',
+    galleryPaths: [
+      '/assets/products/regular-plus-series/hero.png',
+      '/assets/products/terrax-rotavator-gear-drive-side.png',
+      '/assets/products/terrax-rotavator-classic-orange.png',
+      '/assets/products/terrax-rotavator-heavy-duty.png',
+      '/assets/products/terrax-rotavator-chrome.png',
+    ],
     highlights: [
       'Reinforced gearbox and side frame construction',
       'Extended working widths for higher field coverage',
@@ -120,8 +138,14 @@ export const allSeries: Series[] = [
     heroDescription:
       'Built for high-output commercial farming, the Sami Champion Series delivers championship-grade performance where every tillage pass must count.',
     sizeConfigIds: ['s6-42', 's6-48', 's7-48', 's7-54'],
-    imagePath: '/assets/products/sami-champion-series/hero.webp',
-    galleryPaths: [],
+    imagePath: '/assets/products/sami-champion-series/hero.png',
+    galleryPaths: [
+      '/assets/products/sami-champion-series/hero.png',
+      '/assets/products/terrax-rotavator-gear-drive-side.png',
+      '/assets/products/terrax-rotavator-dualtone.png',
+      '/assets/products/terrax-rotavator-classic-orange.png',
+      '/assets/products/terrax-rotavator-chrome.png',
+    ],
     highlights: [
       'High-performance build for demanding farm operations',
       'Wide working widths for maximum field efficiency',
@@ -142,8 +166,14 @@ export const allSeries: Series[] = [
     heroDescription:
       'A specialized tillage solution — the Gyrovator Series delivers deep soil conditioning and vertical mixing for improved soil structure and crop establishment.',
     sizeConfigIds: ['s5-36', 's55-39', 's55-42', 's6-42', 's6-48'],
-    imagePath: '/assets/products/gyrovator-series/hero.webp',
-    galleryPaths: [],
+    imagePath: '/assets/products/gyrovator-series/hero.png',
+    galleryPaths: [
+      '/assets/products/gyrovator-series/hero.png',
+      '/assets/products/terrax-rotavator-gear-drive-side.png',
+      '/assets/products/terrax-rotavator-heavy-duty.png',
+      '/assets/products/terrax-rotavator-dualtone.png',
+      '/assets/products/terrax-rotavator-classic-orange.png',
+    ],
     highlights: [
       'Vertical tillage action for superior soil conditioning',
       'Deep penetration for improved root development',

@@ -12,8 +12,6 @@ export function ProductGallery({ seriesName, galleryPaths = [], heroImage }: Pro
 
   const images = galleryPaths.length > 0 ? galleryPaths : [
     heroImage || '',
-    '/assets/products/terrax-rotavator-side.png',
-    '/assets/products/terrax-rotavator-stand.png',
   ].filter(Boolean);
 
   const currentSrc = images[selectedIndex] || heroImage || '';
@@ -45,39 +43,48 @@ export function ProductGallery({ seriesName, galleryPaths = [], heroImage }: Pro
         <div
           style={{
             display: 'flex',
-            gap: '0.6rem',
+            gap: '0.65rem',
             overflowX: 'auto',
-            paddingBottom: '0.25rem',
+            paddingBottom: '0.35rem',
+            paddingTop: '0.15rem',
             WebkitOverflowScrolling: 'touch',
             scrollbarWidth: 'none',
           }}
         >
-          {images.map((_img, index) => {
+          {images.map((img, index) => {
             const isSelected = selectedIndex === index;
             return (
               <button
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                aria-label={`View ${seriesName} image 0${index + 1}`}
+                aria-label={`View ${seriesName} angle 0${index + 1}`}
                 style={{
-                  width: '72px',
-                  height: '54px',
+                  width: '76px',
+                  height: '56px',
                   flexShrink: 0,
                   borderRadius: 'var(--radius-md)',
                   overflow: 'hidden',
-                  border: `2px solid ${isSelected ? 'var(--color-terrax-orange)' : 'rgba(255, 255, 255, 0.15)'}`,
-                  opacity: isSelected ? 1 : 0.65,
-                  transition: 'all 0.2s ease',
+                  border: `2px solid ${isSelected ? 'var(--color-terrax-orange)' : 'rgba(255, 255, 255, 0.18)'}`,
+                  opacity: isSelected ? 1 : 0.7,
+                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
                   cursor: 'pointer',
-                  backgroundColor: 'var(--color-terrax-charcoal-2)',
-                  padding: 0,
+                  backgroundColor: '#121214',
+                  padding: '2px',
+                  transform: isSelected ? 'scale(1.04)' : 'scale(1)',
                 }}
               >
-                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#141416' }}>
-                  <span style={{ fontFamily: 'var(--font-mid)', fontSize: '0.65rem', color: isSelected ? 'var(--color-terrax-orange)' : '#fff', fontWeight: 700 }}>
-                    0{index + 1}
-                  </span>
-                </div>
+                <img
+                  src={img}
+                  alt={`${seriesName} preview 0${index + 1}`}
+                  loading="lazy"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain',
+                    borderRadius: 'calc(var(--radius-md) - 2px)',
+                    display: 'block',
+                  }}
+                />
               </button>
             );
           })}

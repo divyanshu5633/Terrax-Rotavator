@@ -120,7 +120,7 @@ export function BrandIntro() {
               }}
             >
               <ProductImage
-                src="/assets/products/terrax-rotavator-side.png"
+                src="/assets/products/terrax-rotavator-gear-drive-side.png"
                 alt="TERRAX Agricultural Rotavator Side Gearbox Profile"
                 aspectRatio="4/3"
                 objectFit="contain"
