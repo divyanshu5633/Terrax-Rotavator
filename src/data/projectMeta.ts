@@ -32,7 +32,7 @@ export const projectMeta: ProjectMetadata = {
   developer: 'Divyanshu',
   developerProfile: 'https://www.linkedin.com/in/divyanshu-patel-99450426b/',
   year: '2026',
-  location: 'Chiloda, Gujarat, India',
+  location: 'Chandial, Gujarat, India',
   technologies: [
     'React 18',
     'TypeScript',
@@ -64,13 +64,13 @@ export const projectMeta: ProjectMetadata = {
     { path: '/products/gyrovator-series', name: 'Gyrovator Series', description: 'Vertical tillage and deep soil conditioning' },
     { path: '/why-terrax', name: 'Why Terrax', description: 'Engineering brand manifesto with 5 value pillars' },
     { path: '/applications', name: 'Applications', description: 'Soil preparation role, field selection factors, and 11 configurations' },
-    { path: '/manufacturing', name: 'Manufacturing', description: 'Factory location context on NH-8, Chiloda, Gujarat' },
+    { path: '/manufacturing', name: 'Manufacturing', description: 'Factory location context on Indore Highway, Chandial, Gujarat' },
     { path: '/contact', name: 'Contact & Enquiry', description: 'Direct phone lines, WhatsApp, email, map, and structured enquiry form' },
   ],
   contactArchitecture: {
-    phones: ['+91 8485998851', '+91 9099903217', '+91 9879664168'],
+    phones: ['+91 9099903217', '+91 8485998851', '+91 98796 64168'],
     whatsapp: '+91 9099903217',
     email: 'cruciateagritech@gmail.com',
-    location: 'Chiloda Char Rasta, N.H. No. 8, Gautam Threshar, Gujarat 382355, India',
+    location: '14, Kirti Industrial Park, Indore Highway, Nr. Amba Hotel, Chandial - 382433 (Gujarat - India)',
   },
 };

@@ -105,7 +105,7 @@ export function AboutPage() {
                   tillage for small landholdings to high-output implements for larger field operations.
                 </p>
                 <p className="tx-body">
-                  Manufacturing is based in Chiloda, Gujarat, India. Products are available for direct
+                  Manufacturing is based in Chandial, Gujarat, India. Products are available for direct
                   enquiry via phone, WhatsApp, and email.
                 </p>
 

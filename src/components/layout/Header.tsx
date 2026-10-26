@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, Phone, ArrowRight } from 'lucide-react';
 import { navLinks, seriesLinks } from '../../data/navigation';
+import { contact } from '../../data/contact';
 import { Button } from '../common/Button';
 
 // ─── TERRAX Brand Logo ────────────────────────────────────────────────────────
@@ -297,7 +298,7 @@ export function Header() {
           {/* Desktop CTA (>=768px) */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+918485998851"
+              href={`tel:${contact.phones[0].raw}`}
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -314,7 +315,7 @@ export function Header() {
               aria-label="Call TERRAX"
             >
               <Phone size={13} />
-              +91 84859 98851
+              {contact.phones[0].display}
             </a>
             <Button as="link" to="/contact" variant="primary" size="sm">
               Enquire Now
@@ -601,7 +602,7 @@ function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
           }}
         >
           <a
-            href="tel:+918485998851"
+            href={`tel:${contact.phones[0].raw}`}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -619,7 +620,7 @@ function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
             aria-label="Call TERRAX sales support"
           >
             <Phone size={16} style={{ color: 'var(--color-terrax-lime-light)', flexShrink: 0 }} />
-            Call +91 84859 98851
+            Call {contact.phones[0].display}
           </a>
           <Button as="link" to="/contact" variant="primary" fullWidth onClick={onClose}>
             Enquire Now

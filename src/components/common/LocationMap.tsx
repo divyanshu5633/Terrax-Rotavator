@@ -132,7 +132,7 @@ export function LocationMap({
         }}
       >
         <iframe
-          title="TERRAX Manufacturing Location — Chiloda, Gujarat"
+          title="TERRAX Manufacturing Location — Chandial, Gujarat"
           src={contact.address.embedUrl}
           width="100%"
           height="340"

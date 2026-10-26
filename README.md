@@ -1,6 +1,6 @@
 # TERRAX — Agricultural Implements Website
 
-Official website for **TERRAX**, an agricultural machinery manufacturer based in Chiloda, Gujarat, India, specializing in high-performance rotavators and rotary tillers.
+Official website for **TERRAX**, an agricultural machinery manufacturer based in Chandial, Gujarat, India, specializing in high-performance rotavators and rotary tillers.
 
 ---
 
@@ -28,7 +28,7 @@ Official website for **TERRAX**, an agricultural machinery manufacturer based in
 | `/products/gyrovator-series` | **Gyrovator Series** | Vertical tillage and deep soil conditioning |
 | `/why-terrax` | **Why Terrax** | Engineering brand manifesto with 5 value pillars |
 | `/applications` | **Applications** | Soil preparation role, field selection factors, and 11 configurations |
-| `/manufacturing` | **Manufacturing** | Factory location context on NH-8, Chiloda, Gujarat |
+| `/manufacturing` | **Manufacturing** | Factory location context on Indore Highway, Chandial, Gujarat |
 | `/contact` | **Contact & Enquiry** | Direct phone lines, WhatsApp, email, map, and structured enquiry form |
 | `/*` | **404 Page** | Custom minimal industrial page not found route |
 
@@ -88,7 +88,7 @@ src/
 
 All business and product data is centralized for single-source-of-truth maintenance:
 
-- **`src/data/contact.ts`**: Direct phone lines (`+91 8485998851`, `+91 9099903217`, `+91 9879664168`), WhatsApp (`+91 9099903217`), Email (`cruciateagritech@gmail.com`), Factory Address (`Chiloda Char Rasta, N.H. No. 8, Gautam Threshar, Gujarat 382355, India`), and analytics event dispatcher.
+- **`src/data/contact.ts`**: Direct phone lines (`+91 9099903217`, `+91 8485998851`, `+91 98796 64168`), WhatsApp (`+91 9099903217`), Email (`cruciateagritech@gmail.com`), Factory Address (`14, Kirti Industrial Park, Indore Highway, Nr. Amba Hotel, Chandial - 382433 (Gujarat - India)`), and analytics event dispatcher.
 - **`src/data/series.ts`**: All 6 product series with slugs, descriptions, highlights, and configuration IDs.
 - **`src/data/products.ts`**: All 11 working-width and blade configurations.
 - **`src/data/navigation.ts`**: Primary nav links, series links, company links, and explore links.

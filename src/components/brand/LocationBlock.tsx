@@ -108,7 +108,7 @@ export function LocationBlock({
                 marginBottom: '2rem',
               }}
             >
-              TERRAX agricultural implements are manufactured in Chiloda, Gujarat — a region with an established tradition in agricultural machinery production.
+              TERRAX agricultural implements are manufactured in Chandial, Gujarat — a region with an established tradition in agricultural machinery production.
             </p>
 
             {/* Buttons */}

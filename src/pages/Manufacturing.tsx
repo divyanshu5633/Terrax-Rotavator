@@ -4,6 +4,7 @@ import { BrandHero } from '../components/brand/BrandHero';
 import { LocationBlock } from '../components/brand/LocationBlock';
 import { EnquiryCTA } from '../components/brand/EnquiryCTA';
 import { ManufacturingSection } from '../components/sections/ManufacturingSection';
+import { contact } from '../data/contact';
 
 // ─── Manufacturing Page ───────────────────────────────────────────────────────
 
@@ -11,7 +12,7 @@ export function ManufacturingPage() {
   useSEO({
     title: 'Terrax Manufacturing | Agricultural Implements',
     description:
-      'TERRAX agricultural implements are manufactured in Chiloda, Gujarat, India. Located on NH-8, Gautam Threshar, Gujarat 382355.',
+      `TERRAX agricultural implements are manufactured in Chandial, Gujarat, India. Located at ${contact.address.full}.`,
     canonical: '/manufacturing',
   });
 
@@ -21,7 +22,7 @@ export function ManufacturingPage() {
       <BrandHero
         eyebrow="Manufacturing"
         title={['FROM GUJARAT.', 'FOR AGRICULTURAL', 'APPLICATIONS.']}
-        description="TERRAX agricultural implements are manufactured in Chiloda, Gujarat — producing rotavators and tillage implements for agricultural applications across India."
+        description="TERRAX agricultural implements are manufactured in Chandial, Gujarat — producing rotavators and tillage implements for agricultural applications across India."
         primaryCTA={{ label: 'GET DIRECTIONS', href: '/contact', variant: 'primary' }}
         secondaryCTA={{ label: 'ENQUIRE NOW', href: '/contact', variant: 'ghost' }}
         theme="dark-green"
@@ -52,7 +53,7 @@ export function ManufacturingPage() {
                   marginTop: '0.5rem',
                 }}
               >
-                CHILODA,
+                CHANDIAL,
                 <br />
                 GUJARAT
               </h2>
@@ -61,8 +62,8 @@ export function ManufacturingPage() {
             <div className="lg:col-span-8">
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 <p className="tx-body" style={{ fontSize: '1.05rem', lineHeight: 1.75 }}>
-                  TERRAX operates from Chiloda, located on National Highway No. 8 in Gujarat, India.
-                  The Gautam Threshar area has an established tradition in agricultural machinery
+                  TERRAX operates from Chandial, located on Indore Highway in Gujarat, India.
+                  The Kirti Industrial Park area has an established tradition in agricultural machinery
                   manufacturing — making it a practical location for producing implements used across
                   Indian farming operations.
                 </p>
@@ -110,9 +111,8 @@ export function ManufacturingPage() {
                     lineHeight: 1.8,
                   }}
                 >
-                  Chiloda Char Rasta, N.H. No. 8,<br />
-                  Gautam Threshar,<br />
-                  Gujarat 382355, India
+                  {contact.address.line1},<br />
+                  {contact.address.line2} - {contact.address.pincode} ({contact.address.state} - {contact.address.country})
                 </address>
               </div>
             </div>

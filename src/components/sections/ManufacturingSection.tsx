@@ -30,7 +30,7 @@ export function ManufacturingSection() {
               MANUFACTURED IN GUJARAT
             </h2>
             <p className="tx-body" style={{ color: 'rgba(255, 255, 255, 0.75)', marginBottom: '1.5rem' }}>
-              TERRAX rotavators and agricultural implements are produced in Chiloda, Gujarat — an established hub for agricultural machinery manufacturing in India. Direct factory oversight ensures consistent build quality and specification integrity.
+              TERRAX rotavators and agricultural implements are produced in Chandial, Gujarat — an established hub for agricultural machinery manufacturing in India. Direct factory oversight ensures consistent build quality and specification integrity.
             </p>
 
             {/* Address Card */}
@@ -111,7 +111,7 @@ export function ManufacturingSection() {
             >
               <ProductImage
                 src="/assets/factory/terrax-factory-batch.png"
-                alt="TERRAX Agricultural Machinery Factory Batch Production in Chiloda Gujarat"
+                alt="TERRAX Agricultural Machinery Factory Batch Production in Chandial Gujarat"
                 aspectRatio="16/10"
                 objectFit="cover"
                 fallbackTitle="GUJARAT FACTORY"

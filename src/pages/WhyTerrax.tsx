@@ -30,7 +30,7 @@ const pillars = [
   {
     number: '04',
     title: 'INDIAN MANUFACTURING',
-    body: "TERRAX's manufacturing location is in Chiloda, Gujarat, India — an established region for agricultural machinery production. Products are manufactured at this facility.",
+    body: "TERRAX's manufacturing location is in Chandial, Gujarat, India — an established region for agricultural machinery production. Products are manufactured at this facility.",
     accent: 'orange',
   },
   {
